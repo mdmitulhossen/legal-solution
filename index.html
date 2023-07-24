@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal-Solution</title>
+
+    <!-- Font poppins & EB Gramond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+<!-- taiwind + daisyUI -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+        @layer components {
+              .legalbtn{
+                @apply  border-0 px-6 font-bold text-white hover:bg-transparent hover:border-2 hover:border-[#B68C5A] hover:text-[#B68C5A]  bg-[#B68C5A] cursor-pointer
+              }
+            }
+          </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'gramond': ['EB Garamond', 'serif'],
+                },
+               
+                screens: {
+                    'sm': '576px',
+                    // => @media (min-width: 576px) { ... }
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                    '2xl': '1400px',
+                    // => @media (min-width: 1400px) { ... }
+                    
+                },
+                extend: {
+                    screens: {
+                        '3xl':'1920px',
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/47a0c6551b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="max-w-[1920px] mx-auto 3xl:px-[275px] px-3 sm:px-8 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
+        <!-- navbar -->
+        <nav class="mt-2 lg:mt-4">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="  md:text-4xl text-2xl lg:hidden mr-3">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <a class=" normal-case text-xl"><img   class="ml-4 h-8 md:h-12 xl:h-16" src="./assests/images/logo2.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services<i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a>Cases<i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a>Blog<i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a>Contact Us<i class="fa-solid fa-greater-than"></i></a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn legalbtn">Free Consultation</a>
+                </div>
+              </div>
+        </nav>
+
+        <!-- header banner -->
+        <div class="hero bg-[url(./assests/images/banner.png)] rounded-lg md:mt-16 mt-8">
+            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+            <div class="text-center text-neutral-content mx-4 my-10 lg:my-16">
+              <div class="max-w-[768px]">
+                <h1 class="mb-5 lg:text-5xl text-3xl sm:text-4xl xl:text-[60px] font-bold font-['gramond']">
+                    We Provide Effective <br> 
+                    <span class="text-[#B68C5A]">Legal Solutions</span>
+                </h1>
+                <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <form class="flex">
+                    <input type="text" placeholder="Search your services" class="input focus:ring-2 focus:ring-[#B68C5A] w-full" />
+                    <button class="btn legalbtn ml-3">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+
+</html>
